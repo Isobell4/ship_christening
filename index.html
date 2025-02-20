@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Christening</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Garamond, serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            padding: 0;
+            background: linear-gradient(rgba(43, 116, 131, 0.527), rgba(5, 114, 61, 0.425)), 
+                        url('https://i.imgur.com/aN6Dh23.jpg') no-repeat center center / cover;
+        }  
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-logo {
+            max-width: 80px;
+        }
+        .gsl {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .intro {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .intro img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .intro h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .intro h2 {
+            font-size: 12em;
+            color: #82f8c7f1;
+            font-weight: bold;
+            margin: 10px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .intro p {
+            font-size: 1.5em;
+        }
+        .description-header {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .images {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .images img {
+            width: 300px;
+            height: 200px;
+            background-color: #eeeeee;
+            border: 2px solid white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .launch {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .launch img {
+            width: 150px;
+            height: 100px;
+            background-color: #eeeeee;
+            border: 2px solid white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .venue-question {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #82f896de;
+        }
+        .map-container {
+            margin-top: 10px;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .venue-text {
+            font-size: 1.5em;
+            color: white;
+            margin-top: 10px;
+        }
+        .godmother-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .godmother-section img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            margin: auto;
+        }
+        .godmother-bio {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 700px;
+        }
+        .about-us {
+            margin-top: 20px;
+        }
+        .about-us p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box;
+        }
+        .footer-logo {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+        .contacts {
+            font-size: 1em;
+            color: #ccc;
+            text-align: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="https://i.postimg.cc/wBQ8JdXP/logowww-modified.png" alt="Company Logo" class="nav-logo">
+            <div>
+                <div class="gsl">Green Star Line</div>
+                <div class="tagline">green is the color of the sea we conquered</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#about-us">About Us</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </nav>
+
+    <section class="intro">
+        
+        <h1>A NEW SHIP ON THE WAY! SHIP CHRISTENING!</h1>
+        <h2>RMS Ardent</h2>
+        <p>Come and witness this once-in-a-lifetime celebration with us!</p>
+    </section>
+
+    <section>
+        <h1 class="description-header">What we foresee in future</h1>
+        <p>We really hope to see you soon in our wonderful ship of the future! This is what she would look like on her maiden voyage.</p>
+    </section>
+
+    <div id="gallery" class="images">
+        <img src="https://i.imgur.com/J20VXV4.jpg" alt="Grand Staircase">
+        <img src="https://i.imgur.com/a6yZQOP.jpg" alt="Dining Room">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/MV_Britannic_%28Cropped%29.png" alt="Ship Interior">
+    </div>
+
+
+    <section class="godmother-section">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Enya_-_The_Orlando_Sentinel_%281989%29_%28cropped%29.jpg" alt="Godmother" />
+        <div class="godmother-bio">
+            <h2>The Godmother, Enya</h2>
+            <p>Enya, the godmother of RMS Ardent, is a renowned Irish singer, songwriter, 
+                and musician known for her ethereal sound and unique blend of Celtic, folk, and new age music. 
+                Born Eithne Pádraigín Ní Bhraonáin on May 17, 1961, in County Donegal, Ireland, 
+                Enya's career spans decades, with her debut album "The Celts" gaining international acclaim. 
+                Her signature style, featuring multi-layered vocals and atmospheric melodies, 
+                has earned her Grammy Awards and a global fanbase. 
+                Enya's music has touched millions, and her involvement as the 
+                godmother of SS Ardent symbolizes her cultural influence and connection to the sea.
+                <p><strong>She will sing live with her newest song "This Green Heaven" debuting on Christening day!</strong></p>
+                <div style="margin-top: 20px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EmGrUJzKSrk" 
+                            title="Enya - This Green Heaven (Teaser)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+    </section>
+
+
+    <div class="venue-question">
+        <p>CHRISTENING IN HARLAND AND WOLFF</p>
+    </div>
+    <div class="map-container">
+        <img src="https://i.imgur.com/VTRhcvQ.png" alt="Venue Location">
+    </div>
+    <div class="venue-text">
+        <p>Queen's Island, Belfast BT3 9EU, United Kingdom. We would like to see you there on Dec 29, 2024 10:00 AM!</p>
+    </div>
+
+
+
+    <div class="launch">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/HMHS_Britannic.jpg" alt="Image 1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/A._J._Jansen_-_SS_%27Belgenland%27_of_the_Red_Star_Company_Antwerp_1931-b.jpg" alt="Image 2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Belgic_North_River_1919-01-16_NARA_-_26433767.jpg" alt="Image 3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Mauretania%2C1907_on_Tyne.JPG" alt="Image 4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/SS_Aquitania.jpg" alt="Image 5">
+    </div>
+
+    <div id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Green Star Line is a ship from the past that remains persistent in the test of time. 
+            We sailed from green waters that surround the Earth once upon a time, and 
+            we want to give you the experience of sailing in the seas of green. Come aboard, travellers!</p>
+    </div>
+
+    <footer>
+        <img src="https://i.postimg.cc/wBQ8JdXP/logowww-modified.png" alt="Company Logo" class="footer-logo">
+        <div class="contacts">
+            <p>Contact Us:</p>
+            <p>Call us: (077-756-420-068).</p>
+        </div>
+    </footer>
+</body>
+</html>
